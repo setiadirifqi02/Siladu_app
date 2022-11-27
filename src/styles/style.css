@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(175, 175, 175) !important;
+}
+
+/* 
+* Navbar
+*/
+
+.navbar {
+    position: absolute !important;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    font-size: .7rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: rgb(175, 175, 175) !important;
+}
+
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+
+/*
+* Homepage
+*/
+.home-page__description {
+    background: #011627;
+}
+
+.subheading-line {
+    height: 4px;
+    width: 20%;
+    background: #83f3ed;
+
+}
+
+.accordion-item {
+    border-bottom: solid 1px #83f3ed !important;
+}
+
+/*
+* AboutUs-Page
+*/
+
+.about-page__header {
+    background: #011627;
+    min-height: 340px;
+}
+
+.about-page__main-images img{
+    border-radius: 50%;
+    width: 50%;
+}
+
+.about-page__line{
+    border-bottom: 1px solid#83f3ed;
+}
+
+.faquote{
+    color: #83f3ed;
+}
+
+/* 
+* Footer
+*/
+
+#footer {
+    background: #011627;
+}
+
+@media (max-width:900px) {
+    .description .container {
+        width: 100% !important;
+    }
+    
+}
+
+@media (max-width:1000px) {
+    .overview-picture img {
+        height: 420px;
+    }
+}
+@media (min-width:1200px) {
+    .about-page__main-images img{
+        width: 60%;
+    }
+}
