@@ -10,7 +10,7 @@ html {
 
 a {
     text-decoration: none;
-    color: rgb(175, 175, 175) !important;
+    /* color: rgb(175, 175, 175) !important; */
 }
 
 /* 
@@ -36,7 +36,7 @@ a {
 }
 
 
-.navbar-brand {
+.navbar-brand a{
     color: #fff !important;
 }
 
@@ -82,6 +82,40 @@ a {
 }
 
 /* 
+*Data Children Page
+*
+*/
+
+.jumbotron{
+    background-color: #011627!important;
+}
+
+.children-list{
+    display: grid!important;
+    grid-template-columns: 1fr!important;
+    gap: 10px!important;
+
+}
+
+.card-body .card-text p{
+    margin: 0!important;
+}
+
+.faUserCircle{
+    font-size: 4rem;
+    color: #83f3ed;
+}
+
+/*
+* 
+*Child Detail Page
+*/
+
+.child-detail .faUserCircle{
+    font-size: 12rem;
+}
+
+/* 
 * Footer
 */
 
@@ -89,20 +123,45 @@ a {
     background: #011627;
 }
 
-@media (max-width:900px) {
+@media screen and (min-width: 650px){
+    .children-list{
+        display: grid!important;
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+};
+
+@media screen and (min-width:850px) {
     .description .container {
         width: 100% !important;
+    }
+    .children-list{
+        display: grid!important;
+        grid-template-columns: repeat(3, 1fr)!important;
     }
     
 }
 
-@media (max-width:1000px) {
+@media screen and (min-width:1000px) {
+    .children-list{
+        display: grid!important;
+        grid-template-columns: repeat(3, 1fr)!important;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
     .overview-picture img {
         height: 420px;
     }
 }
-@media (min-width:1200px) {
+@media screen and (min-width:1200px) {
     .about-page__main-images img{
         width: 60%;
     }
+    .children-list{
+        display: grid!important;
+        grid-template-columns: repeat(4, 1fr)!important;
+    
+    }
+    
 }

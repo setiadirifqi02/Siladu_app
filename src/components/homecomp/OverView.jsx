@@ -25,7 +25,7 @@ function OverView() {
           <Col xs={12} md={6}>
             <div className="overview-content py-4">
               <h4>Sehat itu Penting</h4>
-              <Accordion eventKey="0" flush>
+              <Accordion defaultActiveKey="0" flush>
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>1. Apa itu sehat ges?</Accordion.Header>
                   <Accordion.Body className="text-start">

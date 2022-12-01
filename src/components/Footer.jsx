@@ -1,6 +1,9 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
-import { Col, Nav, Row } from 'react-bootstrap';
+import {
+  Col, Nav, Row, NavDropdown,
+} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -13,10 +16,20 @@ function Footer() {
         <Col xl={12} xxl={12} className="text-center text-white">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, corrupti!</p>
           <Nav className="justify-content-center py-4 fw-semibold text-capitalize">
-            <Nav.Link>Home</Nav.Link>
-            <Nav.Link>Care</Nav.Link>
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <NavDropdown title="Services" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/children-data" className="text-capitalize">Data Balita</NavDropdown.Item>
+              <NavDropdown.Item className="text-capitalize">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item className="text-capitalize">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item className="text-capitalize">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link>Health Tips</Nav.Link>
-            <Nav.Link>About Us</Nav.Link>
+            <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
           </Nav>
         </Col>
 

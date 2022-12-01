@@ -5,6 +5,7 @@ import {
   Container,
   Nav,
   Navbar,
+  NavDropdown,
   Offcanvas,
 } from 'react-bootstrap';
 
@@ -13,7 +14,7 @@ function NavigationBar() {
     <div className="navigation-bar sticky-top">
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3 navbar-dark">
-          <Container sm>
+          <Container md="true">
             <Navbar.Brand className="text-capitalize"><Link to="/">CareApp </Link></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -28,11 +29,20 @@ function NavigationBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                  <Nav.Link href="#action2">Care</Nav.Link>
-                  <Nav.Link href="#action2">Health Tips </Nav.Link>
-
-                  <Nav.Link><Link to="/aboutus">About Us</Link></Nav.Link>
+                  <Nav.Link as={Link} to="/">Home</Nav.Link>
+                  <NavDropdown title="Services" id="basic-nav-dropdown">
+                    <NavDropdown.Item as={Link} to="/children-data" className="text-capitalize">Data Balita</NavDropdown.Item>
+                    <NavDropdown.Item className="text-capitalize">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item className="text-capitalize">Something</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item className="text-capitalize">
+                      Separated link
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <Nav.Link>Health Tips </Nav.Link>
+                  <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
 
                 </Nav>
                 {/* <Form className="d-flex">
