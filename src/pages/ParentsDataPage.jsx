@@ -9,26 +9,25 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { useSearchParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
-import ChildList from '../components/childrencomps/ChildList';
+import ParentList from '../components/parentcomps/ParentList';
 import SearchBar from '../components/SearchBar';
-import { getAllChildern } from '../utils/local-data-child';
+import { getAllParents } from '../utils/local-data-parent';
 
-function ChildrenDataPageWrapper() {
+function ParentsDataPageWrapper() {
   const [searchParams, setSearchParams] = useSearchParams();
   const keyword = searchParams.get('keyword');
   function changeSearchParams(keyword) {
     setSearchParams({ keyword });
   }
-
-  return <ChildrenDataPage defaultKeyword={keyword} keywordChange={changeSearchParams} />;
+  return <ParentsDataPage defaultKeyword={keyword} keywordChange={changeSearchParams} />;
 }
 
-class ChildrenDataPage extends React.Component {
+class ParentsDataPage extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      children: getAllChildern(),
+      parents: getAllParents(),
       keyword: props.defaultKeyword || '',
     };
     this.onKeywordChangeHandler = this.onKeywordChangeHandler.bind(this);
@@ -45,16 +44,16 @@ class ChildrenDataPage extends React.Component {
   }
 
   render() {
-    const children = this.state.children.filter((child) => {
-      return child.name.toLowerCase().includes(
+    const parents = this.state.parents.filter((parent) => {
+      return parent.momName.toLowerCase().includes(
         this.state.keyword.toLowerCase(),
       );
     });
     return (
-      <div className="children-data">
+      <div className="parents-data">
         <div className="jumbotron jumbotron-fluid py-5 text-white">
           <div className="container mt-5">
-            <h1 className="display-4">Data Balita</h1>
+            <h1 className="display-4">Data Orang Tua Balita</h1>
             <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
           </div>
         </div>
@@ -64,14 +63,14 @@ class ChildrenDataPage extends React.Component {
               <SearchBar keyword={this.state.keyword} keywordChange={this.onKeywordChangeHandler} />
             </Col>
             <Col sm={12} md={2}>
-              <button type="button" aria-label="add data balita button"><FontAwesomeIcon icon={faPlusCircle} /></button>
+              <button type="button" aria-label="add data Parent button"><FontAwesomeIcon icon={faPlusCircle} /></button>
             </Col>
           </Row>
-          <ChildList children={children} />
+          <ParentList parents={parents} />
         </Container>
       </div>
     );
   }
 }
 
-export default ChildrenDataPageWrapper;
+export default ParentsDataPageWrapper;

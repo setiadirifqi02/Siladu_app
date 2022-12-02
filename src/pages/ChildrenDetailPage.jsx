@@ -22,15 +22,12 @@ class ChildrenDetailPage extends React.Component {
   }
 
   render() {
-    // const { child } = this.state;
-
     if (this.state.child === null) {
       return <p>Data Tidak Ditemukan!</p>;
     }
 
     return (
       <div className="child-detail">
-        {/* <ChildDetail {...this.state.child} /> */}
         <ChildDetail {...this.state.child} />
       </div>
     );

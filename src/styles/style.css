@@ -10,7 +10,6 @@ html {
 
 a {
     text-decoration: none;
-    /* color: rgb(175, 175, 175) !important; */
 }
 
 /* 
@@ -36,8 +35,49 @@ a {
 }
 
 
-.navbar-brand a{
+.navbar-brand a {
     color: #fff !important;
+}
+
+.search-bar{
+    background-color: #011627;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar__input{
+    padding: 5px 10px;
+    width: 80%;
+    flex-grow: 3;
+}
+
+.search-bar__icon{
+    text-align: right;
+    padding: 5px 10px;
+    flex-grow: 1;
+    font-size: 1.6rem;
+    color: #fff;
+    width: 20%;
+}
+
+.search-bar input {
+    background-color: transparent;
+    padding: 4px 10px ;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: #fff;
+}
+
+.search-bar input:focus{
+    background-color: #fff;
+    color: #011627;
+}
+
+.search-bar input::placeholder {
+    color: #fff;
 }
 
 
@@ -68,16 +108,16 @@ a {
     min-height: 340px;
 }
 
-.about-page__main-images img{
+.about-page__main-images img {
     border-radius: 50%;
     width: 50%;
 }
 
-.about-page__line{
+.about-page__line {
     border-bottom: 1px solid#83f3ed;
 }
 
-.faquote{
+.faquote {
     color: #83f3ed;
 }
 
@@ -85,23 +125,29 @@ a {
 *Data Children Page
 *
 */
-
-.jumbotron{
-    background-color: #011627!important;
+.children-data button{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: #0d6efd;
+}
+.jumbotron {
+    background-color: #011627 !important;
 }
 
-.children-list{
-    display: grid!important;
-    grid-template-columns: 1fr!important;
-    gap: 10px!important;
+.children-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
 
 }
 
-.card-body .card-text p{
-    margin: 0!important;
+.card-body .card-text p {
+    margin: 0 !important;
 }
 
-.faUserCircle{
+.faUserCircle {
     font-size: 4rem;
     color: #83f3ed;
 }
@@ -111,7 +157,30 @@ a {
 *Child Detail Page
 */
 
-.child-detail .faUserCircle{
+.child-detail .faUserCircle {
+    font-size: 12rem;
+}
+
+/* 
+*Parent Data Page
+*
+*/
+
+.parents-data button{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: #0d6efd;
+}
+
+.parent-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+}
+
+.parent-detail .faUserCircle {
     font-size: 12rem;
 }
 
@@ -123,30 +192,37 @@ a {
     background: #011627;
 }
 
-@media screen and (min-width: 650px){
-    .children-list{
-        display: grid!important;
-        grid-template-columns: repeat(2, 1fr)!important;
+@media screen and (min-width: 650px) {
+    .children-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
     }
-};
+
+    .parent-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+;
 
 @media screen and (min-width:850px) {
     .description .container {
         width: 100% !important;
     }
-    .children-list{
-        display: grid!important;
-        grid-template-columns: repeat(3, 1fr)!important;
-    }
-    
 }
 
 @media screen and (min-width:1000px) {
-    .children-list{
-        display: grid!important;
-        grid-template-columns: repeat(3, 1fr)!important;
+    .children-list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
     }
-    
+
+    .parent-list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
 }
 
 @media screen and (max-width:1000px) {
@@ -154,14 +230,21 @@ a {
         height: 420px;
     }
 }
+
 @media screen and (min-width:1200px) {
-    .about-page__main-images img{
+    .about-page__main-images img {
         width: 60%;
     }
-    .children-list{
-        display: grid!important;
-        grid-template-columns: repeat(4, 1fr)!important;
-    
+
+    .children-list {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
     }
-    
+
+    .parent-list {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+
+    }
+
 }

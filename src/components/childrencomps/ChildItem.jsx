@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable react/prop-types */
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -22,16 +23,16 @@ function ChildItem({
           <table className="mb-4 fs-6 fw-semibold">
             <tbody>
               <tr>
-                <td>Jenis Kelamin :  </td>
-                <td>{gender}</td>
+                <td>Jenis Kelamin</td>
+                <td className="ps-3">:&nbsp;{gender}</td>
               </tr>
               <tr>
-                <td> Tempat Lahir : </td>
-                <td>{birthPlace}</td>
+                <td> Tempat Lahir</td>
+                <td className="ps-3">:&nbsp;{birthPlace}</td>
               </tr>
               <tr>
-                <td>Tanggal Lahir : </td>
-                <td>{birthDate}</td>
+                <td>Tanggal Lahir</td>
+                <td className="ps-3">:&nbsp;{birthDate}</td>
               </tr>
             </tbody>
           </table>

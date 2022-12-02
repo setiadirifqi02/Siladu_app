@@ -1,36 +1,32 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faHouseChimneyUser } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Container,
   Row,
   Col,
   Table,
-  Button,
 } from 'react-bootstrap';
 
-function ChildDetail({
-  name,
-  gender,
-  birthPlace,
-  birthDate,
+function ParentDetail({
   momName,
+  momJob,
+  momPhoneNumber,
   dadName,
-  posyanduName,
-  bidanName,
-  vaccination,
-  detail,
-  parentId,
+  dadJob,
+  dadPhoneNumber,
+  phoneNumber,
+  address,
+
 }) {
   return (
     <div className="children-detail">
       <div className="jumbotron jumbotron-fluid py-5 text-white">
         <div className="container mt-5">
           <h1 className="display-6">
-            Informasi Adek&nbsp;
-            <span>{name}</span>
+            Detail Informasi, Ibu&nbsp;
+            <span>{momName}</span>
           </h1>
           <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
@@ -38,25 +34,7 @@ function ChildDetail({
       <Container className="py-5 text-black">
         <Row className="justify-content-center">
           <Col sm={12} md={6}>
-            <h4 className="py-4">Informasi Balita</h4>
-            <Table responsive="sm">
-              <tbody>
-                <tr>
-                  <td>Jenis Kelamin: </td>
-                  <td>{gender}</td>
-                </tr>
-                <tr>
-                  <td>Tempat Lahir: </td>
-                  <td>{birthPlace}</td>
-                </tr>
-                <tr>
-                  <td>Tanggal Lahir: </td>
-                  <td>{birthDate}</td>
-                </tr>
-              </tbody>
-            </Table>
-
-            <h4 className="py-4">Informasi Orang Tua</h4>
+            <h4 className="py-4">Informasi Ibu Balita</h4>
             <Table responsive="sm">
               <tbody>
                 <tr>
@@ -64,37 +42,50 @@ function ChildDetail({
                   <td>{momName}</td>
                 </tr>
                 <tr>
-                  <td>Nama Ayah: </td>
-                  <td>{dadName}</td>
+                  <td>Pekerjaan Ibu: </td>
+                  <td>{momJob}</td>
+                </tr>
+                <tr>
+                  <td>No. Telepone: </td>
+                  <td>{momPhoneNumber}</td>
                 </tr>
               </tbody>
             </Table>
-            <Button as={Link} to={`/parents-data/${parentId}`} variant="primary" className="my-2">Lihat Detail</Button>
 
-            <h4 className="py-4">Informasi Imunisasi</h4>
+            <h4 className="py-4">Informasi Ayah Balita</h4>
             <Table responsive="sm">
               <tbody>
                 <tr>
-                  <td>Nama Posyandu: </td>
-                  <td>{posyanduName}</td>
+                  <td>Nama Ayah: </td>
+                  <td>{dadName}</td>
                 </tr>
                 <tr>
-                  <td>Jenis Imunisasi: </td>
-                  <td>{vaccination}</td>
+                  <td>Pekerjaan Ayah: </td>
+                  <td>{dadJob}</td>
                 </tr>
                 <tr>
-                  <td>Nama bidan: </td>
-                  <td>{bidanName}</td>
+                  <td>No. Telepone: </td>
+                  <td>{dadPhoneNumber}</td>
+                </tr>
+              </tbody>
+            </Table>
+
+            <h4 className="py-4">Informasi Lain</h4>
+            <Table responsive="sm">
+              <tbody>
+                <tr>
+                  <td>Telephone Rumah: </td>
+                  <td>{phoneNumber}</td>
                 </tr>
                 <tr>
-                  <td>Keterangan </td>
-                  <td>{detail}</td>
+                  <td>Alamat </td>
+                  <td>{address}</td>
                 </tr>
               </tbody>
             </Table>
           </Col>
           <Col xs={12} sm={6} className="text-center py-4">
-            <FontAwesomeIcon icon={faUserCircle} className="child-detail faUserCircle" />
+            <FontAwesomeIcon icon={faHouseChimneyUser} className="child-detail faUserCircle" />
           </Col>
         </Row>
       </Container>
@@ -103,4 +94,4 @@ function ChildDetail({
   );
 }
 
-export default ChildDetail;
+export default ParentDetail;

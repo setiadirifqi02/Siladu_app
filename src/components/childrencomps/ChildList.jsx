@@ -15,7 +15,7 @@ function ChildList({ children }) {
           />
         ))
       ) : (
-        <p>Tidak ada data y</p>
+        <p className="text-center fs-4">Data Tidak Ditemukan</p>
       )}
     </div>
   );

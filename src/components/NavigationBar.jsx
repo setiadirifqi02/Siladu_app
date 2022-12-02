@@ -11,9 +11,9 @@ import {
 
 function NavigationBar() {
   return (
-    <div className="navigation-bar sticky-top">
+    <div className="navigation-bar fixed-top">
       {['md'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3 navbar-dark">
+        <Navbar key={expand} expand={expand} className="mb-3 py-3 navbar-dark">
           <Container md="true">
             <Navbar.Brand className="text-capitalize"><Link to="/">CareApp </Link></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -32,13 +32,15 @@ function NavigationBar() {
                   <Nav.Link as={Link} to="/">Home</Nav.Link>
                   <NavDropdown title="Services" id="basic-nav-dropdown">
                     <NavDropdown.Item as={Link} to="/children-data" className="text-capitalize">Data Balita</NavDropdown.Item>
-                    <NavDropdown.Item className="text-capitalize">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item className="text-capitalize">Something</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item className="text-capitalize">
-                      Separated link
+                    <NavDropdown.Item as={Link} to="/parents-data" className="text-capitalize">
+                      Data Parent
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as={Link} to="/posyandu-data" className="text-capitalize">Data Posyandu</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item as={Link} to="/bidan-data" className="text-capitalize">
+                      Data Bidan
                     </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link>Health Tips </Nav.Link>
