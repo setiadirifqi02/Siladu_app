@@ -18,7 +18,7 @@ function ChildItem({
     <div className="child-item">
       <Card className="child-item-card mt-4" style={{ width: '18rem' }}>
         <Card.Body>
-          <FontAwesomeIcon icon={faUserCircle} className="faUserCircle" />
+          <FontAwesomeIcon icon={faUserCircle} className="fa-custom-style" />
           <Card.Title className="mt-4 mb-3">{name}</Card.Title>
           <table className="mb-4 fs-6 fw-semibold">
             <tbody>
