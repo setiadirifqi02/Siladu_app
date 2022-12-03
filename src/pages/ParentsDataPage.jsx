@@ -29,6 +29,7 @@ class ParentsDataPage extends React.Component {
     this.state = {
       parents: getAllParents(),
       keyword: props.defaultKeyword || '',
+      placeholder: 'Masukan nama ibu balita...',
     };
     this.onKeywordChangeHandler = this.onKeywordChangeHandler.bind(this);
   }
@@ -54,13 +55,17 @@ class ParentsDataPage extends React.Component {
         <div className="jumbotron jumbotron-fluid py-5 text-white">
           <div className="container mt-5">
             <h1 className="display-4">Data Orang Tua Balita</h1>
-            <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <p className="lead">Menampilkan informasi data Orang Tua dari balita yang terdapat di Posyandu Kelurahan Majakerta.</p>
           </div>
         </div>
         <Container>
           <Row className="align-items-center justify-content-center pt-4">
             <Col sm={12} md={10}>
-              <SearchBar keyword={this.state.keyword} keywordChange={this.onKeywordChangeHandler} />
+              <SearchBar
+                keyword={this.state.keyword}
+                placeholder={this.state.placeholder}
+                keywordChange={this.onKeywordChangeHandler}
+              />
             </Col>
             <Col sm={12} md={2}>
               <button type="button" aria-label="add data Parent button"><FontAwesomeIcon icon={faPlusCircle} /></button>
