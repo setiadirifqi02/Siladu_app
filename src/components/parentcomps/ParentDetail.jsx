@@ -28,12 +28,12 @@ function ParentDetail({
             Detail Informasi, Ibu&nbsp;
             <span>{momName}</span>
           </h1>
-          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <p className="lead">Disini anda bisa melihat semua informasi yang ada mengenai orang tua balita di Kelurahan Majakerta.</p>
         </div>
       </div>
       <Container className="py-5 text-black">
         <Row className="justify-content-center">
-          <Col sm={12} md={6}>
+          <Col sm={12} md={6} className="order-sm-2 order-md-1">
             <h4 className="py-4">Informasi Ibu Balita</h4>
             <Table responsive="sm">
               <tbody>
@@ -84,8 +84,8 @@ function ParentDetail({
               </tbody>
             </Table>
           </Col>
-          <Col xs={12} sm={6} className="text-center py-4">
-            <FontAwesomeIcon icon={faHouseChimneyUser} className="child-detail faUserCircle" />
+          <Col xs={12} sm={6} className="text-center py-4 order-sm-1 order-md-2">
+            <FontAwesomeIcon icon={faHouseChimneyUser} className="fa-custom-style-2" />
           </Col>
         </Row>
       </Container>
