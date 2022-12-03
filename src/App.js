@@ -8,6 +8,10 @@ import ChildrenDataPage from './pages/ChildrenDataPage';
 import ChildrenDetailPage from './pages/ChildrenDetailPage';
 import ParentsDataPage from './pages/ParentsDataPage';
 import ParentDetailPage from './pages/ParentDetailPage';
+import PosyanduDataPage from './pages/PosyanduDataPage';
+import PosyanduDetailPage from './pages/PosyanduDetailPage';
+import BidanDataPage from './pages/BidanDataPage';
+import BidanDetailPage from './pages/BidanDetailPage';
 import AboutUsPage from './pages/AboutUsPage';
 
 function App() {
@@ -24,6 +28,10 @@ function App() {
           <Route path="/children-data/:id" element={<ChildrenDetailPage />} />
           <Route path="/parents-data" element={<ParentsDataPage />} />
           <Route path="/parents-data/:id" element={<ParentDetailPage />} />
+          <Route path="/posyandus-data" element={<PosyanduDataPage />} />
+          <Route path="/posyandu-data/:id" element={<PosyanduDetailPage />} />
+          <Route path="/bidans-data" element={<BidanDataPage />} />
+          <Route path="/bidans-data/:id" element={<BidanDetailPage />} />
         </Routes>
       </main>
 
