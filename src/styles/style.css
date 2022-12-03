@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -130,7 +131,7 @@ a {
     background-color: transparent;
     border: none;
     font-size: 3rem;
-    color: #0d6efd;
+    color: #011627;
 }
 .jumbotron {
     background-color: #011627 !important;
@@ -147,19 +148,16 @@ a {
     margin: 0 !important;
 }
 
-.faUserCircle {
+.fa-custom-style {
     font-size: 4rem;
     color: #83f3ed;
 }
 
-/*
-* 
-*Child Detail Page
-*/
-
-.child-detail .faUserCircle {
+.fa-custom-style-2{
+    color: #011627;
     font-size: 12rem;
 }
+
 
 /* 
 *Parent Data Page
@@ -171,7 +169,7 @@ a {
     background-color: transparent;
     border: none;
     font-size: 3rem;
-    color: #0d6efd;
+    color: #011627;
 }
 
 .parent-list {
@@ -180,8 +178,42 @@ a {
     gap: 10px !important;
 }
 
-.parent-detail .faUserCircle {
-    font-size: 12rem;
+/* 
+*Posyandu Data page
+*
+*/
+
+.posyandu-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+}
+
+.posyandu-data button{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: #011627;
+}
+
+/* 
+*Bidan Data page
+*
+*/
+
+.bidans-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+}
+
+.bidans-data button{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: #011627;
 }
 
 /* 
@@ -199,6 +231,16 @@ a {
     }
 
     .parent-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .posyandu-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .bidans-list {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
     }
@@ -222,7 +264,6 @@ a {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
     }
-
 }
 
 @media screen and (max-width:1000px) {
@@ -238,13 +279,23 @@ a {
 
     .children-list {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 
     .parent-list {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr) !important;
 
+    }
+
+    .posyandu-list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .bidans-list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
     }
 
 }
