@@ -1,4 +1,5 @@
-const parents = [
+/* eslint-disable prefer-const */
+let parents = [
   {
     id: 'parent-01',
     momName: 'Yuyun Yuliana',
@@ -8,7 +9,7 @@ const parents = [
     dadPhoneNumber: '087319816719',
     dadJob: 'Karyawan Swasta',
     phoneNumber: '021-43933045',
-    address: 'Jl Letjen Haryono MT Ruko Mataram Plasa B-5, Semarang,Jawa Tengah',
+    address: 'Jl Letjen Haryono MT RT02/RW04 Ds.Majakerata Kec. Watukumpul, Pemalang,Jawa Tengah',
   },
   {
     id: 'parent-02',
@@ -19,7 +20,7 @@ const parents = [
     dadPhoneNumber: '087315001600',
     dadJob: 'Karyawan BUMN',
     phoneNumber: '0-21-3589098',
-    address: 'Jl Kp Sawah 44, Jakarta Utara, Dki Jakarta,',
+    address: 'Jl Kp Sawah 44, RT04/RW03 Ds.Majakerata Kec. Watukumpul, Pemalang,Jawa Tengah',
   },
   {
     id: 'parent-03',
@@ -30,7 +31,7 @@ const parents = [
     dadPhoneNumber: '087376499898',
     phoneNumber: ' 021-7340264',
     dadJob: 'Jaksa',
-    address: ' Jl Benda Jaya II Bl Y/12-13 RT 005/12 Duren Sawit, jakarta Selata, Dki Jakarta',
+    address: 'Jl Benda Jaya RT07/RW01 Ds.Majakerata Kec. Watukumpul, Pemalang,Jawa Tengah',
   },
   {
     id: 'parent-04',
@@ -41,7 +42,7 @@ const parents = [
     dadPhoneNumber: '087812439076',
     dadJob: 'Arsitek',
     phoneNumber: ' 021-5669662',
-    address: ' Jl Letjen South Parman Hotel Ciputra, Dki Jakarta',
+    address: 'Jl Letjen Parman RT06/RW04 Ds.Majakerata Kec. Watukumpul, Pemalang,Jawa Tengah',
   },
   {
     id: 'parent-05',
@@ -52,7 +53,7 @@ const parents = [
     dadPhoneNumber: '087862437776',
     dadJob: 'Tentara',
     phoneNumber: '021-8620465',
-    address: 'Jl Bintaro Permai 9, Dki Jakarta',
+    address: 'Jl Bintaro Permai 9, RT08/RW05 Ds.Majakerata Kec. Watukumpul, Pemalang,Jawa Tengah',
   },
 ];
 
