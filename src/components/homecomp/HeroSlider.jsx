@@ -10,7 +10,7 @@ function HeroSlider() {
     <Carousel className="home-page__hero-slider">
       <Carousel.Item>
         <img
-          className="d-block min-vh-100 w-100"
+          className="d-block h-75 w-100"
           src={images1}
           alt="First slide"
         />
@@ -21,7 +21,7 @@ function HeroSlider() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block min-vh-100 w-100"
+          className="d-block h-75 w-100"
           src={images2}
           alt="Second slide"
         />
@@ -32,7 +32,7 @@ function HeroSlider() {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block min-vh-100 w-100"
+          className="d-block h-75 w-100"
           src={images3}
           alt="Third slide"
         />
