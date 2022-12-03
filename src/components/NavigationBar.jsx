@@ -13,7 +13,7 @@ function NavigationBar() {
   return (
     <div className="navigation-bar fixed-top">
       {['md'].map((expand) => (
-        <Navbar key={expand} expand={expand} className="mb-3 py-3 navbar-dark">
+        <Navbar key={expand} expand={expand} className="mb-3 py-2 navbar-dark">
           <Container md="true">
             <Navbar.Brand className="text-capitalize"><Link to="/">CareApp </Link></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -37,9 +37,9 @@ function NavigationBar() {
                       Data Parent
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="/posyandu-data" className="text-capitalize">Data Posyandu</NavDropdown.Item>
+                    <NavDropdown.Item as={Link} to="/posyandus-data" className="text-capitalize">Data Posyandu</NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="/bidan-data" className="text-capitalize">
+                    <NavDropdown.Item as={Link} to="/bidans-data" className="text-capitalize">
                       Data Bidan
                     </NavDropdown.Item>
                   </NavDropdown>
