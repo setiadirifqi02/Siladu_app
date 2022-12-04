@@ -18,6 +18,7 @@ function ParentItem({
       <Card className="parent-item-card mt-4" style={{ width: '18rem' }}>
         <Card.Body>
           <FontAwesomeIcon icon={faHouseChimneyUser} className="fa-custom-style" />
+          <div className="card-line" />
           <Card.Title className="mt-4 mb-3">
             Data Keluarga
           </Card.Title>

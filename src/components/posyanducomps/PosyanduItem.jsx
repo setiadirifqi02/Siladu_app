@@ -20,6 +20,7 @@ function PosyanduItem({
       <Card className="posyandu-item-card mt-4" style={{ width: '24rem' }}>
         <Card.Body>
           <FontAwesomeIcon icon={faHospitalUser} className="fa-custom-style" />
+          <div className="card-line" />
           <Card.Title className="mt-4 mb-3">{namePosyandu}</Card.Title>
           <table className="mb-4 fs-6 fw-semibold">
             <tbody>
