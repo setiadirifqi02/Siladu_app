@@ -48,6 +48,10 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.search-bar:hover{
+    border: 2px solid#0d6efd;
+}
 .search-bar__input{
     padding: 5px 10px;
     width: 80%;
@@ -79,6 +83,18 @@ a {
 
 .search-bar input::placeholder {
     color: #fff;
+}
+
+/* .card{
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.10);
+} */
+
+.card .card-line{
+    height: 2px ;
+    width: 100%;
+    margin-top: 10px;
+    background: #83f3ed;
+
 }
 
 
@@ -198,6 +214,11 @@ a {
 }
 
 /* 
+*Add Parent Page
+*
+*/
+
+/* 
 *Bidan Data page
 *
 */
@@ -214,6 +235,30 @@ a {
     border: none;
     font-size: 3rem;
     color: #011627;
+}
+
+/* 
+*
+*Add Parent Page
+*/
+.add-new-parent__input .empty-div{
+    height:40px;
+}
+
+/* 
+*Add posyandu Page
+*
+*/
+.add-new-posyandu__input .empty-div{
+    margin-top: 40px;
+}
+
+/* 
+*Add Bidan Page
+*
+*/
+.add-new-bidan__input .empty-div{
+    height: 240px;
 }
 
 /* 
