@@ -2,14 +2,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { getBidan } from '../utils/local-data-bidan';
+import { useParams, useNavigate } from 'react-router-dom';
+import { getBidan, deleteBidan } from '../utils/local-data-bidan';
 import BidanDetail from '../components/bidancomps/BidanDetail';
 
 function BidanDetailPageWrapper() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
-  return <BidanDetailPage id={id} />;
+  return <BidanDetailPage id={id} navigate={navigate} />;
 }
 
 class BidanDetailPage extends React.Component {
@@ -19,7 +20,14 @@ class BidanDetailPage extends React.Component {
     this.state = {
       bidan: getBidan(props.id),
     };
+
+    this.onHandleDelete = this.onHandleDelete.bind(this);
   }
+
+  onHandleDelete = (id) => {
+    deleteBidan(id);
+    this.props.navigate('/bidans-data');
+  };
 
   render() {
     if (this.state.bidan === null) {
@@ -28,7 +36,11 @@ class BidanDetailPage extends React.Component {
 
     return (
       <div className="child-detail">
-        <BidanDetail {...this.state.bidan} />
+        <BidanDetail
+          {...this.state.bidan}
+          id={this.props.id}
+          onDelete={this.onHandleDelete}
+        />
       </div>
     );
   }

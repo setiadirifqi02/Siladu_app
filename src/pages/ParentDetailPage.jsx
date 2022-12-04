@@ -2,14 +2,15 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import { getParent } from '../utils/local-data-parent';
+import { useParams, useNavigate } from 'react-router-dom';
+import { getParent, deleteParent } from '../utils/local-data-parent';
 import ParentDetail from '../components/parentcomps/ParentDetail';
 
 function ParentDetailPageWrapper() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
-  return <ParentDetailPage id={id} />;
+  return <ParentDetailPage id={id} navigate={navigate} />;
 }
 
 class ParentDetailPage extends React.Component {
@@ -19,7 +20,13 @@ class ParentDetailPage extends React.Component {
     this.state = {
       parent: getParent(props.id),
     };
+    this.onHandleDelete = this.onHandleDelete.bind(this);
   }
+
+  onHandleDelete = (id) => {
+    deleteParent(id);
+    this.props.navigate('/parents-data');
+  };
 
   render() {
     if (this.state.parent === null) {
@@ -28,7 +35,11 @@ class ParentDetailPage extends React.Component {
 
     return (
       <div className="parent-detail">
-        <ParentDetail {...this.state.parent} />
+        <ParentDetail
+          {...this.state.parent}
+          id={this.props.id}
+          onDelete={this.onHandleDelete}
+        />
       </div>
     );
   }
