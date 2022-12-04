@@ -6,7 +6,7 @@
 /* eslint-disable react/no-children-prop */
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import ChildList from '../components/childrencomps/ChildList';
@@ -69,7 +69,7 @@ class ChildrenDataPage extends React.Component {
               />
             </Col>
             <Col sm={12} md={2}>
-              <button type="button" aria-label="add data balita button"><FontAwesomeIcon icon={faPlusCircle} /></button>
+              <button type="button" aria-label="add data balita button"><Link to="/children-data/add-child"><FontAwesomeIcon icon={faPlusCircle} /></Link></button>
             </Col>
           </Row>
           <ChildList children={children} />

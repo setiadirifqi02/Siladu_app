@@ -6,7 +6,7 @@
 /* eslint-disable react/no-children-prop */
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import ParentList from '../components/parentcomps/ParentList';
@@ -68,7 +68,7 @@ class ParentsDataPage extends React.Component {
               />
             </Col>
             <Col sm={12} md={2}>
-              <button type="button" aria-label="add data Parent button"><FontAwesomeIcon icon={faPlusCircle} /></button>
+              <button type="button" aria-label="add data Parent button"><Link to="/parents-data/add-parent"><FontAwesomeIcon icon={faPlusCircle} /></Link></button>
             </Col>
           </Row>
           <ParentList parents={parents} />
