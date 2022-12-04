@@ -10,6 +10,8 @@ import {
   Table,
   Button,
 } from 'react-bootstrap';
+import ActionDeleteButton from '../ActionDeleteButton';
+import ActionEditButton from '../ActionEditButton';
 
 function ChildDetail({
   name,
@@ -26,6 +28,9 @@ function ChildDetail({
   vaccination,
   detail,
   parentId,
+  id,
+  onDelete,
+  onUpdate,
 }) {
   return (
     <div className="children-detail">
@@ -130,6 +135,16 @@ function ChildDetail({
           </Col>
           <Col xs={12} sm={6} className="text-center py-4 order-sm-1 order-md-2">
             <FontAwesomeIcon icon={faUserCircle} className="fa-custom-style-2" />
+            <Row className="justify-content-center action-button py-3 px-3 mt-3">
+              <Col xs={12} sm={12} md={12} lg={3} />
+              <Col xs={6} sm={6} md={6} lg={3}>
+                <ActionDeleteButton id={id} onDelete={onDelete} />
+              </Col>
+              <Col xs={6} sm={6} md={6} lg={3}>
+                <ActionEditButton id={id} onUpdate={onUpdate} />
+              </Col>
+              <Col xs={12} sm={12} md={12} lg={3} />
+            </Row>
           </Col>
         </Row>
       </Container>

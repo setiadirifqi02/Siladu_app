@@ -10,6 +10,8 @@ import {
   Table,
   Button,
 } from 'react-bootstrap';
+import ActionDeleteButton from '../ActionDeleteButton';
+import ActionEditButton from '../ActionEditButton';
 
 function PosyanduDetail({
   bidanId,
@@ -20,6 +22,9 @@ function PosyanduDetail({
   secretary,
   treasurer,
   eventDate,
+  id,
+  onDelete,
+  onUpdate,
 }) {
   return (
     <div className="posyandu-detail">
@@ -36,9 +41,9 @@ function PosyanduDetail({
           </p>
         </div>
       </div>
-      <Container className="py-5 text-black">
+      <Container className="py-5 text-black" id="main-detal">
         <Row className="justify-content-center">
-          <Col sm={12} md={6} className="order-sm-2 order-md-1">
+          <Col sm={12} md={6} className="order-sm-2 order-md-1" id="main-detail__text">
             <h4 className="py-4">Informasi Kader</h4>
             <Table responsive="sm">
               <tbody>
@@ -88,8 +93,18 @@ function PosyanduDetail({
               </tbody>
             </Table>
           </Col>
-          <Col xs={12} sm={6} className="text-center py-4 order-sm-1 order-md-2">
+          <Col xs={12} sm={6} className="text-center py-4 order-sm-1 order-md-2" id="main-detail__hero-action">
             <FontAwesomeIcon icon={faHospitalUser} className=" fa-custom-style-2" />
+            <Row className="justify-content-center action-button py-3 px-3 mt-3">
+              <Col xs={12} sm={12} md={12} lg={3} />
+              <Col xs={6} sm={6} md={6} lg={3}>
+                <ActionDeleteButton id={id} onDelete={onDelete} />
+              </Col>
+              <Col xs={6} sm={6} md={6} lg={3}>
+                <ActionEditButton id={id} onUpdate={onUpdate} />
+              </Col>
+              <Col xs={12} sm={12} md={12} lg={3} />
+            </Row>
           </Col>
         </Row>
       </Container>

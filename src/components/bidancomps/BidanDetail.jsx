@@ -8,8 +8,17 @@ import {
   Col,
   Table,
 } from 'react-bootstrap';
+import ActionDeleteButton from '../ActionDeleteButton';
+import ActionEditButton from '../ActionEditButton';
 
-function BidanDetail({ bidanName, bidanPhoneNumber, address }) {
+function BidanDetail({
+  bidanName,
+  bidanPhoneNumber,
+  address,
+  id,
+  onDelete,
+  onUpdate,
+}) {
   return (
     <div className="bidan-detail">
       <div className="jumbotron jumbotron-fluid py-5 text-white">
@@ -48,6 +57,16 @@ function BidanDetail({ bidanName, bidanPhoneNumber, address }) {
           </Col>
           <Col xs={12} sm={6} className="text-center py-4 order-sm-1 order-md-2">
             <FontAwesomeIcon icon={faUserDoctor} className="fa-custom-style-2" />
+            <Row className="justify-content-center action-button py-3 px-3 mt-3">
+              <Col xs={12} sm={12} md={12} lg={3} />
+              <Col xs={6} sm={6} md={6} lg={3}>
+                <ActionDeleteButton id={id} onDelete={onDelete} />
+              </Col>
+              <Col xs={6} sm={6} md={6} lg={3}>
+                <ActionEditButton id={id} onUpdate={onUpdate} />
+              </Col>
+              <Col xs={12} sm={12} md={12} lg={3} />
+            </Row>
           </Col>
         </Row>
       </Container>
