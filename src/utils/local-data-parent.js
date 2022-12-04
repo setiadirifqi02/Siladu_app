@@ -66,4 +66,27 @@ function getParent(id) {
   return foundedParent;
 }
 
-export { getAllParents, getParent };
+function addParent({
+  momName,
+  momPhoneNumber,
+  momJob,
+  dadName,
+  dadPhoneNumber,
+  dadJob,
+  phoneNumber,
+  address,
+}) {
+  parents = [...parents, {
+    id: `parent-${new Date()}`,
+    momName: momName || '(noname)',
+    momPhoneNumber,
+    momJob,
+    dadName: dadName || '(noname)',
+    dadPhoneNumber,
+    dadJob,
+    phoneNumber,
+    address,
+  }];
+}
+
+export { getAllParents, getParent, addParent };

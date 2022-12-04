@@ -41,4 +41,10 @@ function getBidan(id) {
   return foundedBidan;
 }
 
-export { getAllBidan, getBidan };
+function addBidan({ bidanName, bidanPhoneNumber, address }) {
+  bidans = [...bidans, {
+    id: `bidan-${new Date()}`, bidanName: bidanName || '(noname)', bidanPhoneNumber, address,
+  }];
+}
+
+export { getAllBidan, getBidan, addBidan };

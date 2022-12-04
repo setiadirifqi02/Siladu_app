@@ -66,4 +66,18 @@ function getPosyandu(id) {
   return foundedPosyandu;
 }
 
-export { getAllPosyandu, getPosyandu };
+function addPosyandu({
+  namePosyandu,
+  address,
+  leader,
+  coLeader,
+  secretary,
+  treasurer,
+  eventDate,
+}) {
+  posyandus = [...posyandus, {
+    id: `posyandu-${new Date()}`, namePosyandu: namePosyandu || '(noname)', address, leader, bidanId: `bidan-${new Date()}`, coLeader, secretary, treasurer, eventDate,
+  }];
+}
+
+export { getAllPosyandu, getPosyandu, addPosyandu };
