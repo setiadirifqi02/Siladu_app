@@ -17,7 +17,7 @@ function PosyanduItem({
 }) {
   return (
     <div className="posyandu-item">
-      <Card className="posyandu-item-card mt-4" style={{ width: '24rem' }}>
+      <Card className="posyandu-item-card mt-4" style={{ width: '22rem' }}>
         <Card.Body>
           <FontAwesomeIcon icon={faHospitalUser} className="fa-custom-style" />
           <div className="card-line" />

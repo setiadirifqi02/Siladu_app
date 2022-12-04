@@ -14,7 +14,7 @@ function ChildItem({
 }) {
   return (
     <div className="bidan-item">
-      <Card className="bidan-item-card mt-4" style={{ width: '24rem' }}>
+      <Card className="bidan-item-card mt-4" style={{ width: '22rem' }}>
         <Card.Body>
           <FontAwesomeIcon icon={faUserDoctor} className="fa-custom-style" />
           <div className="card-line" />
