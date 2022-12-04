@@ -47,4 +47,13 @@ function addBidan({ bidanName, bidanPhoneNumber, address }) {
   }];
 }
 
-export { getAllBidan, getBidan, addBidan };
+function deleteBidan(id) {
+  bidans = bidans.filter((bidan) => bidan.id !== id);
+}
+
+export {
+  getAllBidan,
+  getBidan,
+  addBidan,
+  deleteBidan,
+};

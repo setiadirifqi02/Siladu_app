@@ -134,7 +134,7 @@ function addChild({
     detail,
   }];
 }
-function removeChild(id) {
+function deleteChild(id) {
   children = children.filter((child) => child.id !== id);
 }
 
@@ -142,5 +142,5 @@ export {
   getAllChildern,
   getChild,
   addChild,
-  removeChild,
+  deleteChild,
 };

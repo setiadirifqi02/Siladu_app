@@ -89,4 +89,13 @@ function addParent({
   }];
 }
 
-export { getAllParents, getParent, addParent };
+function deleteParent(id) {
+  parents = parents.filter((parent) => parent.id !== id);
+}
+
+export {
+  getAllParents,
+  getParent,
+  addParent,
+  deleteParent,
+};

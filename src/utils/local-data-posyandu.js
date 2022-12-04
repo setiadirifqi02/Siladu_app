@@ -80,4 +80,13 @@ function addPosyandu({
   }];
 }
 
-export { getAllPosyandu, getPosyandu, addPosyandu };
+function deletePosyandu(id) {
+  posyandus = posyandus.filter((posyandu) => posyandu.id !== id);
+}
+
+export {
+  getAllPosyandu,
+  getPosyandu,
+  addPosyandu,
+  deletePosyandu,
+};
