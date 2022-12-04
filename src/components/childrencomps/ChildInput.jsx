@@ -47,7 +47,7 @@ function ChildInput({ addChild }) {
       <div className="jumbotron jumbotron-fluid py-5 text-white">
         <div className="container mt-5">
           <h1 className="display-6">
-            Tambahkan Data Orang Tua Balita Baru
+            Tambahkan Data Balita Baru
           </h1>
         </div>
       </div>
