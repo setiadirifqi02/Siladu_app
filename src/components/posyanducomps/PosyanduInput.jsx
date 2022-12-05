@@ -92,17 +92,6 @@ function PosyanduInput({ addPosyandu }) {
       <div className="empty-div">
           &nbsp;
       </div>
-      {/* <form onSubmit={onSubmitHandler} className="posyandu-input">
-        <input type="text" placeholder="Nama"
-        value={namePosyandu} onChange={onNamePosyanduChange} />
-        <input type="text" placeholder="Nama" value={leader} onChange={onLeaderChange} />
-        <input type="text" placeholder="Nama" value={coLeader} onChange={onCoLeaderChange} />
-        <input type="text" placeholder="Nama" value={secretary} onChange={onSecretaryChange} />
-        <input type="text" placeholder="Nama" value={treasurer} onChange={onTreasurerChange} />
-        <input type="text" placeholder="Nama" value={address} onChange={onAddressChange} />
-        <input type="text" placeholder="Nama" value={eventDate} onChange={onEventDateChange} />
-        <button type="submit">submit</button>
-      </form> */}
     </div>
   );
 }
