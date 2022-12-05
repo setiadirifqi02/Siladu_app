@@ -84,9 +84,36 @@ function deletePosyandu(id) {
   posyandus = posyandus.filter((posyandu) => posyandu.id !== id);
 }
 
+function editPosyandu({
+  id,
+  namePosyandu,
+  address,
+  leader,
+  coLeader,
+  secretary,
+  treasurer,
+  eventDate,
+}) {
+  const posyandusEdit = posyandus.find((posyandu) => posyandu.id === id);
+  posyandusEdit.namePosyandu = namePosyandu;
+  posyandusEdit.address = address;
+  posyandusEdit.leader = leader;
+  posyandusEdit.coLeader = coLeader;
+  posyandusEdit.secretary = secretary;
+  posyandusEdit.treasurer = treasurer;
+  posyandusEdit.eventDate = eventDate;
+
+  posyandus = posyandus.map((posyandu) => {
+    if (posyandu.id === id) {
+      return posyandu;
+    }
+    return posyandu;
+  });
+}
 export {
   getAllPosyandu,
   getPosyandu,
   addPosyandu,
   deletePosyandu,
+  editPosyandu,
 };

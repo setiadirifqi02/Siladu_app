@@ -93,9 +93,39 @@ function deleteParent(id) {
   parents = parents.filter((parent) => parent.id !== id);
 }
 
+function editParent({
+  id,
+  momName,
+  momPhoneNumber,
+  momJob,
+  dadName,
+  dadPhoneNumber,
+  dadJob,
+  phoneNumber,
+  address,
+}) {
+  const parentEdit = parents.find((parent) => parent.id === id);
+  parentEdit.momName = momName;
+  parentEdit.momPhoneNumber = momPhoneNumber;
+  parentEdit.momJob = momJob;
+  parentEdit.dadName = dadName;
+  parentEdit.dadPhoneNumber = dadPhoneNumber;
+  parentEdit.dadJob = dadJob;
+  parentEdit.phoneNumber = phoneNumber;
+  parentEdit.address = address;
+
+  parents = parents.map((parent) => {
+    if (parent.id === id) {
+      return parent;
+    }
+    return parent;
+  });
+}
+
 export {
   getAllParents,
   getParent,
   addParent,
   deleteParent,
+  editParent,
 };

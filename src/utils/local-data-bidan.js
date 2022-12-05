@@ -51,9 +51,29 @@ function deleteBidan(id) {
   bidans = bidans.filter((bidan) => bidan.id !== id);
 }
 
+function editBidan({
+  id,
+  bidanName,
+  bidanPhoneNumber,
+  address,
+}) {
+  const bidanEdit = bidans.find((bidan) => bidan.id === id);
+  bidanEdit.bidanName = bidanName;
+  bidanEdit.bidanPhoneNumber = bidanPhoneNumber;
+  bidanEdit.address = address;
+
+  bidans = bidans.map((bidan) => {
+    if (bidan.id === id) {
+      return bidan;
+    }
+    return bidan;
+  });
+}
+
 export {
   getAllBidan,
   getBidan,
   addBidan,
   deleteBidan,
+  editBidan,
 };

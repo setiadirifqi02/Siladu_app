@@ -138,9 +138,47 @@ function deleteChild(id) {
   children = children.filter((child) => child.id !== id);
 }
 
+function editChild({
+  id,
+  name,
+  gender,
+  birthPlace,
+  birthDate,
+  height,
+  weight,
+  momName,
+  dadName,
+  posyanduName,
+  bidanName,
+  vaccination,
+  detail,
+}) {
+  const childrenEdit = children.find((child) => child.id === id);
+  childrenEdit.name = name;
+  childrenEdit.gender = gender;
+  childrenEdit.birthPlace = birthPlace;
+  childrenEdit.birthDate = birthDate;
+  childrenEdit.height = height;
+  childrenEdit.weight = weight;
+  childrenEdit.momName = momName;
+  childrenEdit.dadName = dadName;
+  childrenEdit.posyanduName = posyanduName;
+  childrenEdit.bidanName = bidanName;
+  childrenEdit.vaccination = vaccination;
+  childrenEdit.detail = detail;
+
+  children = children.map((child) => {
+    if (child.id === id) {
+      return child;
+    }
+    return child;
+  });
+}
+
 export {
   getAllChildern,
   getChild,
   addChild,
   deleteChild,
+  editChild,
 };
