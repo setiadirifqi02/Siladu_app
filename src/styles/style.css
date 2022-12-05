@@ -127,6 +127,15 @@ a {
     border-radius: 50%;
 }
 
+.action-button .action-button__edit-button a{
+    color: #fff;
+    padding: 20px 20px;
+}
+
+.action-button .action-button__edit-button a:hover{
+    color: #011627;
+}
+
 /* fix order display on detail page */
 #main-detal{
     display: flex;
