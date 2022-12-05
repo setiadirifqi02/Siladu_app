@@ -24,7 +24,6 @@ function PosyanduDetail({
   eventDate,
   id,
   onDelete,
-  onUpdate,
 }) {
   return (
     <div className="posyandu-detail">
@@ -101,7 +100,7 @@ function PosyanduDetail({
                 <ActionDeleteButton id={id} onDelete={onDelete} />
               </Col>
               <Col xs={6} sm={6} md={6} lg={3}>
-                <ActionEditButton id={id} onUpdate={onUpdate} />
+                <ActionEditButton link={`/posyandus-data/${id}/edit-posyandu`} />
               </Col>
               <Col xs={12} sm={12} md={12} lg={3} />
             </Row>

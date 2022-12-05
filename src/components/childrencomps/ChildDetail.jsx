@@ -30,7 +30,6 @@ function ChildDetail({
   parentId,
   id,
   onDelete,
-  onUpdate,
 }) {
   return (
     <div className="children-detail">
@@ -141,7 +140,7 @@ function ChildDetail({
                 <ActionDeleteButton id={id} onDelete={onDelete} />
               </Col>
               <Col xs={6} sm={6} md={6} lg={3}>
-                <ActionEditButton id={id} onUpdate={onUpdate} />
+                <ActionEditButton link={`/children-data/${id}/edit-child`} />
               </Col>
               <Col xs={12} sm={12} md={12} lg={3} />
             </Row>
