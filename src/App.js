@@ -21,6 +21,7 @@ import AddBidanPage from './pages/AddBidanPage';
 import EditBidanPage from './pages/EditBidanPage';
 import BidanDetailPage from './pages/BidanDetailPage';
 import AboutUsPage from './pages/AboutUsPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <Route path="/bidans-data/add-bidan" element={<AddBidanPage />} />
           <Route path="/bidans-data/:id/edit-bidan" element={<EditBidanPage />} />
           <Route path="/bidans-data/:id" element={<BidanDetailPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
 
