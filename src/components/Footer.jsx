@@ -14,7 +14,7 @@ function Footer() {
       </div>
       <Row className="mb-3">
         <Col xl={12} xxl={12} className="text-center text-white">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, corrupti!</p>
+          <p>Capstone Project Program Studi Independent Besertifikasi Batch 3 Dicoding</p>
           <Nav className="justify-content-center py-4 fw-semibold text-capitalize">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
