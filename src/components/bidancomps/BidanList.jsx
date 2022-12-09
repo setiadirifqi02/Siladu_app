@@ -15,7 +15,7 @@ function BidanList({ bidans }) {
           />
         ))
       ) : (
-        <p className="text-center fs-4">Data Tidak Ditemukan</p>
+        <p className="text-start fs-4">Tidak ada data..</p>
       )}
     </div>
   );

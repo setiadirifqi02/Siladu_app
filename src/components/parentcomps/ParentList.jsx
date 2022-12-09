@@ -15,7 +15,7 @@ function ParentList({ parents }) {
           />
         ))
       ) : (
-        <p>Tidak ada data</p>
+        <p className="text-start fs-4">Tidak ada data..</p>
       )}
     </div>
   );
