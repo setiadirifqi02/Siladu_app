@@ -15,7 +15,7 @@ function NavigationBar() {
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3 py-2 navbar-dark">
           <Container md="true">
-            <Navbar.Brand className="text-capitalize"><Link to="/">CareApp </Link></Navbar.Brand>
+            <Navbar.Brand className="text-capitalize"><Link to="/">Siladu </Link></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -24,7 +24,7 @@ function NavigationBar() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  CareApp
+                  Siladu
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
