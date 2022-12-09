@@ -9,11 +9,11 @@ function AboutUsPage() {
     <div className="about-page text-center" id="about-page">
       <div className="about-page__header py-5">
         <h2 className="about-page__header-title text-white text-capitalize mt-4">C22-241 Team</h2>
-        <div className="about-page__header-decriptiion text-white text-center  mt-4 px-5">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Veritatis velit perspiciatis, aliquid quae quas in esse?
-          </p>
+        <div className="about-page__header-decriptiion text-white text-center  mx-auto mt-4 px-5 w-50">
+          <h5>
+            Perkenalakan anggota-anggota Tim kami dibalik project yang memungkinkan
+            aplikasi website Siladu ini berjalan dan dapat digunakan oleh pengguna.
+          </h5>
         </div>
       </div>
 
@@ -30,9 +30,8 @@ function AboutUsPage() {
 
               <p className="lead fst-italic">
                 <FontAwesomeIcon icon={faQuoteLeft} className="faquote" />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,
-                repellendus. Culpa reprehenderit suscipit ullam optio.
-                Tempora aliquid enim, totam nihil sunt hic voluptat.
+                Hallo!, Perkenalkan nama saya Halimah Tussakdiyah bisa dipanggil Nadia.
+                Dari Akademi Manjemen Informatika dan Komputer Taruna.
                 <FontAwesomeIcon icon={faQuoteRight} className="faquote" />
 
               </p>
@@ -47,9 +46,8 @@ function AboutUsPage() {
 
               <p className="lead fst-italic">
                 <FontAwesomeIcon icon={faQuoteLeft} className="faquote" />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,
-                repellendus. Culpa reprehenderit suscipit ullam optio.
-                Tempora aliquid enim, totam nihil sunt hic voluptat.
+                Hi Saya Roni Rusamana.Saya mengikuti STudi Indipendent Bersertifikat
+                Batch 3 Dicoding kelas Pengembang Front-end Web dan React.
                 <FontAwesomeIcon icon={faQuoteRight} className="faquote" />
 
               </p>
@@ -75,9 +73,9 @@ function AboutUsPage() {
 
               <p className="lead fst-italic">
                 <FontAwesomeIcon icon={faQuoteLeft} className="faquote" />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,
-                repellendus. Culpa reprehenderit suscipit ullam optio. Tempora aliquid enim,
-                totam nihil sunt hic voluptat.
+                Hi, Saya Rifqi Setiadi, saya dari Univeristas Amikom Purwokerto.
+                Mengembangkan dan membangun website yang interaktif dengan UI yang unik dan menarik,
+                dengan UX yang terbaik adalah bidang yang sedang saya tekuni.
                 <FontAwesomeIcon icon={faQuoteRight} className="faquote" />
 
               </p>
@@ -92,9 +90,8 @@ function AboutUsPage() {
 
               <p className="lead fst-italic">
                 <FontAwesomeIcon icon={faQuoteLeft} className="faquote" />
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit,
-                repellendus. Culpa reprehenderit suscipit ullam optio. Tempora aliquid enim,
-                totam nihil sunt hic voluptat.
+                Perkenalkan nama saya Muhammad Fazrul Maulana Universits Tarumanagara Jakarta.
+                Saya mengikuti SIB Batch 3 Dicoding kelas Pengembang Front-end Web dan React.
                 <FontAwesomeIcon icon={faQuoteRight} className="faquote" />
 
               </p>
