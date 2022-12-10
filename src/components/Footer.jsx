@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className="footer" id="footer">
       <div className="text-center text-white py-5">
-        <h2>CareApp</h2>
+        <h2>Siladu</h2>
         <div className="mx-auto subheading-line mt-4" />
       </div>
       <Row className="mb-3">
@@ -19,16 +19,18 @@ function Footer() {
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/children-data" className="text-capitalize">Data Balita</NavDropdown.Item>
-              <NavDropdown.Item className="text-capitalize">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item className="text-capitalize">Something</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item className="text-capitalize">
-                Separated link
+              <NavDropdown.Item as={Link} to="/parents-data" className="text-capitalize">
+                Data Parent
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/posyandus-data" className="text-capitalize">Data Posyandu</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/bidans-data" className="text-capitalize">
+                Data Bidan
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link>Health Tips</Nav.Link>
+            <Nav.Link as={Link} to="/health-article">Health Articles</Nav.Link>
             <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
           </Nav>
         </Col>
