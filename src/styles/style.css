@@ -300,6 +300,49 @@ a {
 }
 
 /* 
+*Health Article
+*
+ */
+
+.articles-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 340px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.article-image{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.article-content{
+    padding: 10px 10px;
+    margin: 10px 0 ;
+}
+
+.article-content p{
+    margin-top: 10px;
+}
+
+/* .article-content {
+
+} */
+
+.article-list {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+/* 
 * Footer
 */
 
@@ -336,6 +379,11 @@ a {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
     }
+
+    .article-list {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
 }
 
 ;
@@ -353,6 +401,11 @@ a {
     }
 
     .parent-list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .article-list {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
     }
@@ -386,6 +439,10 @@ a {
     }
 
     .bidans-list {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    .article-list {
         display: grid !important;
         grid-template-columns: repeat(3, 1fr) !important;
     }
