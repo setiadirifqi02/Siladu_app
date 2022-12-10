@@ -20,7 +20,7 @@ function ArticlePage() {
         <div className="about-page__header-decriptiion text-white text-center  mx-auto mt-4 px-5 w-50">
           <h5>
             Menampilkan berita-berita tentang perkembangan dunia kesehatan terbaru
-            di indonesia, anda dapat melihat dan membaca berita-berita tersebut dini.
+            di indonesia, anda dapat melihat dan membaca berita-berita tersebut disini.
           </h5>
         </div>
       </div>
