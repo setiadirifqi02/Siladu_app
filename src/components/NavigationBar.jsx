@@ -43,19 +43,10 @@ function NavigationBar() {
                       Data Bidan
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link>Health Tips </Nav.Link>
+                  <Nav.Link as={Link} to="/health-article">Health Articles </Nav.Link>
                   <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
 
                 </Nav>
-                {/* <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
