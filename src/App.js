@@ -20,6 +20,7 @@ import BidanDataPage from './pages/BidanDataPage';
 import AddBidanPage from './pages/AddBidanPage';
 import EditBidanPage from './pages/EditBidanPage';
 import BidanDetailPage from './pages/BidanDetailPage';
+import ArticlePage from './pages/ArticlePage';
 import AboutUsPage from './pages/AboutUsPage';
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -49,6 +50,7 @@ function App() {
           <Route path="/bidans-data/add-bidan" element={<AddBidanPage />} />
           <Route path="/bidans-data/:id/edit-bidan" element={<EditBidanPage />} />
           <Route path="/bidans-data/:id" element={<BidanDetailPage />} />
+          <Route path="/health-article" element={<ArticlePage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
