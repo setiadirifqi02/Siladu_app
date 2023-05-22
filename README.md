@@ -10,9 +10,29 @@ Siladu is a website application developed for the needs of an Integrated Posyand
 - Display list of updated health news using web API news.org 
 ---
 ### Screen Shots
+- Home Page
+
+<img src="https://github.com/setiadirifqi02/Siladu_app/assets/110323140/42566417-fd0b-4c93-a53e-447d40fc24a8"  width="200" height="100%">
+
+- Service Page displaying some Data
+
+<img src="https://github.com/setiadirifqi02/Siladu_app/assets/110323140/7ff21bec-af04-4e3f-aff4-6c043111f6cc"  width="200" height="100%">
+
+= Detail Data Page where it can perform update or delete data
+
+<img src="https://github.com/setiadirifqi02/Siladu_app/assets/110323140/74d137fb-e3a2-41f9-ba76-c9d07c4c7122"  width="200" height="100%">
+
+- Add Data Page
+
+<img src="https://github.com/setiadirifqi02/Siladu_app/assets/110323140/b9ae7380-31e8-446b-a6ff-4eb33826b80f"  width="200" height="100%">
+
+- About Us Page
+
+<img src="https://github.com/setiadirifqi02/Siladu_app/assets/110323140/18c4a5f1-d3f7-4aef-9359-0284c6191702"  width="200" height="100%">
 
 
-## Available Scripts
+
+### Available Scripts
 
 In the project directory, you can run:
 
