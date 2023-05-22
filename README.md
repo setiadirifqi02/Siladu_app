@@ -18,7 +18,7 @@ Siladu is a website application developed for the needs of an Integrated Posyand
 
 <img src="https://github.com/setiadirifqi02/Siladu_app/assets/110323140/7ff21bec-af04-4e3f-aff4-6c043111f6cc"  width="200" height="100%">
 
-= Detail Data Page where it can perform update or delete data
+- Detail Data Page where it can perform update or delete data
 
 <img src="https://github.com/setiadirifqi02/Siladu_app/assets/110323140/74d137fb-e3a2-41f9-ba76-c9d07c4c7122"  width="200" height="100%">
 
